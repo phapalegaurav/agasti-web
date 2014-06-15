@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty 1.0 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html class="{{ trans.getLanguage() }}">
+	<head>
+		<title>{% block page_title %}{% endblock %} {{ trans.get('base.title') }}</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+    {% block js_head %}
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="/js/jquery.min.js"></script>
+		<script src="/js/jquery.dropotron.min.js"></script>
+		<script src="/js/skel.min.js"></script>
+		<script src="/js/skel-layers.min.js"></script>
+		<script src="/js/init.js"></script>
+    {% endblock %}
+
+		{% block additional_js_head %}
+
+		{% endblock %}
+
+		{% block css_head %}
+		<noscript>
+			<link rel="stylesheet" href="/css/skel.css" />
+			<link rel="stylesheet" href="/css/style.css" />
+			<link rel="stylesheet" href="/css/style-noscript.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+    {% endblock %}
+		{% block additional_css_head %}
+
+		{% endblock %}
+	</head>
+	<body class="{% block page_type %}index{% endblock %} loading">
+
+    <header id="header" class="{% block header_type %}{% endblock %}">
+      {% include 'blocks/navbar.html' %}
+    </header>
+
+		<!-- Banner -->
+		{% block content %}
+
+    {% endblock %}
+
+		<!-- Footer -->
+			<footer id="footer">
+
+				<ul class="icons">
+					<li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
+					<!-- <li><a href="#" class="icon circle fa-github"><span class="label">Github</span></a></li> -->
+					<!-- <li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li> -->
+				</ul>
+
+				<span class="copyright">&copy; Shri Kshetra Agasti Ashram. All rights reserved. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+
+			</footer>
+			{% block js_foot %}
+
+			{% endblock %}
+	</body>
+</html>

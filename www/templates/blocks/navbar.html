@@ -1,0 +1,24 @@
+<!-- Header -->
+
+  <h1 id="logo"><a href="/{{ lang }}">{{ trans.get('block.navbar.brand') }}<span></span></a></h1>
+  <nav id="nav">
+    {% block top_nav %}
+    <ul>
+      <!-- <li class="current"><a href="/">Home</a></li> -->
+      <li class="only-narrow only-narrower only-mobile"><a href="/{{ lang }}">{{ trans.get('block.navbar.brand') }}</a></li>
+      <li><a href="/{{ lang }}/about">{{ trans.get('block.navbar.about') }}</a></li>
+      <li><a href="/{{ lang }}/activities">{{ trans.get('block.navbar.activities') }}</a></li>
+      <li><a href="/{{ lang }}/festivals">{{ trans.get('block.navbar.festivals') }}</a></li>
+      <li><a href="/{{ lang }}/photos">{{ trans.get('block.navbar.gallery') }}</a></li>
+      <li><a href="/{{ lang }}/trust">{{ trans.get('block.navbar.trust') }}</a></li>
+      <li class="submenu">
+        <a href="#" title="{{ trans.get('block.navbar.language') }}"><span class="only-narrow only-narrower only-mobile">{{ trans.get('block.navbar.language') }}</span><i class="fa fa-language"></i></a>
+        <ul>
+					<li><a href="{{ urlFor(page, {'lang':'mr'}) }}">{{ trans.get('block.navbar.marathi') }}</a></li>
+					<li><a href="{{ urlFor(page, {'lang':'en'}) }}">{{ trans.get('block.navbar.english') }}</a></li>
+					<li><a href="{{ urlFor(page, {'lang':'hi'}) }}">{{ trans.get('block.navbar.hindi') }}</a></li>
+        </ul>
+      </li>
+    </ul>
+    {% endblock %}
+  </nav>

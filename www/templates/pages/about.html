@@ -1,0 +1,30 @@
+{% extends 'layouts/base.html' %}
+
+{% block page_title %} {{ trans.get('page.about.title')|raw }} | {% endblock %}
+
+{% block page_type %}left-sidebar{% endblock %}
+
+{% block content %}
+
+<!-- Main -->
+<article id="main">
+
+  <header class="special container">
+    <!-- <span class="icon fa-laptop"></span> -->
+    <h2>{{ trans.get('page.about.heading')|raw }}</h2>
+    <!-- <p>Where things on the left ... accompany that on the right.</p> -->
+  </header>
+
+  <!-- One -->
+  <section class="wrapper style4 container">
+    {{ trans.get('page.about.content')|raw }}
+  </section>
+
+
+  <!-- Two -->
+  <section class="wrapper style3 container special">
+  {% include 'blocks/ways-to-reach.html' %}
+  </section>
+</article>
+
+{% endblock %}

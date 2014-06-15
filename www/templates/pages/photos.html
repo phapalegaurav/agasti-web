@@ -1,0 +1,102 @@
+{% extends 'layouts/base.html' %}
+
+{% block page_title %}{{ trans.get('page.photos.title') }} | {% endblock %}
+
+{% block additional_js_head %}
+<!-- bxSlider Javascript file -->
+<script src="/basic/bjqs.js"></script>
+{% endblock %}
+
+{% block additional_css_head %}
+<!-- bxSlider Javascript file -->
+<link href="/basic/bjqs.css" rel="stylesheet" />
+{% endblock %}
+
+
+{% block page_type %}left-sidebar{% endblock %}
+
+{% block content %}
+
+<!-- Main -->
+<article id="main">
+
+  <header class="special container">
+    <!-- <span class="icon fa-laptop"></span> -->
+    <h2><strong>{{ trans.get('page.photos.heading') }}</strong></h2>
+    <!-- <p>Where things on the left ... accompany that on the right.</p> -->
+  </header>
+
+  <!-- One -->
+  <section class="wrapper style4 container">
+    <div id="slider">
+      <ul class="bjqs">
+        <li>
+          <img src="/images/gallery/01.jpg" alt={{ trans.get('page.trust.heading') }}>
+        </li>
+        <li>
+          <img src="/images/gallery/02.jpg" alt={{ trans.get('page.trust.heading') }}>
+        </li>
+        <li>
+          <img src="/images/gallery/03.jpg" alt={{ trans.get('page.trust.heading') }}>
+        </li>
+        <li>
+          <img src="/images/gallery/04.jpg" alt={{ trans.get('page.trust.heading') }}>
+        </li>
+        <li>
+          <img src="/images/gallery/05.jpg" alt={{ trans.get('page.trust.heading') }}>
+        </li>
+        <!-- <li>
+          <img src="/images/gallery/06.jpg" alt={{ trans.get('page.trust.heading') }}>
+        </li> -->
+        <li>
+          <img src="/images/gallery/07.jpg" alt={{ trans.get('page.trust.heading') }}>
+        </li>
+        <li>
+          <img src="/images/gallery/08.jpg" alt={{ trans.get('page.trust.heading') }}>
+        </li>
+        <!-- <li>
+          <img src="/images/gallery/09.jpg" alt={{ trans.get('page.trust.heading') }}>
+        </li> -->
+        <li>
+          <img src="/images/gallery/10.jpg" alt={{ trans.get('page.trust.heading') }}>
+        </li>
+        <!-- <li>
+          <img src="/images/gallery/11.jpg" alt={{ trans.get('page.trust.heading') }}>
+        </li> -->
+        <li>
+          <img src="/images/gallery/12.jpg" alt={{ trans.get('page.trust.heading') }}>
+        </li>
+        <!-- <li>
+          <img src="/images/gallery/13.jpg" alt={{ trans.get('page.trust.heading') }}>
+        </li> -->
+        <li>
+          <img src="/images/gallery/14.jpg" alt={{ trans.get('page.trust.heading') }}>
+        </li>
+        <li>
+          <img src="/images/gallery/15.jpg" alt={{ trans.get('page.trust.heading') }}>
+        </li>
+        <li>
+          <img src="/images/gallery/16.jpg" alt={{ trans.get('page.trust.heading') }}>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</article>
+
+{% endblock %}
+
+
+{% block js_foot %}
+<script>
+jQuery(document).ready(function($){
+	$('#slider').bjqs({
+		width : 900,
+    height: 1275,
+		responsive: true,
+    nexttext: '<i class="fa fa-angle-right"></i>',
+    prevtext: '<i class="fa fa-angle-left"></i>'
+	})
+})
+</script>
+{% endblock %}

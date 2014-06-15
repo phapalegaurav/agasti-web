@@ -1,0 +1,27 @@
+{% extends 'layouts/base.html' %}
+
+{% block page_title %}{{ trans.get('page.festivals.title')|raw }} | {% endblock %}
+{% block page_type %}left-sidebar{% endblock %}
+{% block content %}
+
+<!-- Main -->
+      <article id="main">
+
+        <header class="special container">
+          <!-- <span class="icon fa-laptop"></span> -->
+          <h2><strong>{{ trans.get('page.festivals.heading')|raw }}</strong></h2>
+          <!-- <p>Where things on the left ... accompany that on the right.</p> -->
+        </header>
+
+        <!-- One -->
+          <section class="wrapper style4 container">
+
+          <ul>
+            {{ trans.get('page.festivals.content')|raw }}
+          </ul>
+
+          </section>
+
+      </article>
+
+{% endblock %}

@@ -1,0 +1,66 @@
+
+@font-face {
+    font-family: 'cdac-gistyogeshnormal';
+    src: url('../fonts/cdac-webfont.eot');
+    src: url('../fonts/cdac-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cdac-webfont.woff') format('woff'),
+         url('../fonts/cdac-webfont.ttf') format('truetype'),
+         url('../fonts/cdac-webfont.svg#cdac-gistyogeshnormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gargimedium';
+    src: url('../fonts/gargi-webfont.eot');
+    src: url('../fonts/gargi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gargi-webfont.woff') format('woff'),
+         url('../fonts/gargi-webfont.ttf') format('truetype'),
+         url('../fonts/gargi-webfont.svg#gargimedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'cdac-gistyogeshnormal';
+    src: url('../fonts/cdac-webfont.eot');
+    src: url('../fonts/cdac-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cdac-webfont.woff') format('woff'),
+         url('../fonts/cdac-webfont.ttf') format('truetype'),
+         url('../fonts/cdac-webfont.svg#cdac-gistyogeshnormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NotoSansDevanagari';
+    src: url('../fonts/NotoSansDevanagari-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'NotoSansDevanagari';
+    src: url('../fonts/NotoSansDevanagari-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'NotoSansDevanagariUI';
+    src: url('../fonts/NotoSansDevanagariUI-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'NotoSansDevanagariUI';
+    src: url('../fonts/NotoSansDevanagariUI-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+
+}

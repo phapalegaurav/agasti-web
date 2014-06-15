@@ -1,0 +1,23 @@
+{% extends 'layouts/base.html' %}
+
+{% block page_title %}{{ trans.get('page.activities.title')|raw }} | {% endblock %}
+{% block page_type %}left-sidebar{% endblock %}
+{% block content %}
+
+<!-- Main -->
+      <article id="main">
+
+        <header class="special container">
+          <!-- <span class="icon fa-laptop"></span> -->
+          <h2><strong>{{ trans.get('page.activities.heading')|raw }}</strong></h2>
+          <!-- <p>Where things on the left ... accompany that on the right.</p> -->
+        </header>
+
+        <!-- One -->
+          <section class="wrapper style4 container">
+            {{ trans.get('page.activities.content')|raw }}
+          </section>
+
+      </article>
+
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends 'layouts/base.html' %}
+
+{% block header_type %}alt{% endblock %}
+
+{% block content %}
+
+{% include 'blocks/home-banner.html' %}
+<!-- Main -->
+<article id="main">
+    <section class="wrapper style3 container special">
+      {% include 'blocks/ways-to-reach.html' %}
+    </section>
+
+</article>
+
+<!-- CTA -->
+<section id="cta">
+  <article id="contact">
+    <header>
+      <h2>{{ trans.get('base.contact_us')|raw }}</h2>
+    </header>
+    <address>
+      {{ trans.get('base.address')|raw }}
+    </address>
+  </article>
+  <!-- <footer>
+    <ul class="buttons">
+      <li><a href="#" class="button special">Take My Money</a></li>
+      <li><a href="#" class="button">LOL Wut</a></li>
+    </ul>
+  </footer> -->
+
+</section>
+{% endblock %}

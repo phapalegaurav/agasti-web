@@ -1,0 +1,26 @@
+<section id="banner">
+
+  <!--
+    ".inner" is set up as an inline-block so it automatically expands
+    in both directions to fit whatever's inside it. This means it won't
+    automatically wrap lines, so be sure to use line breaks where
+    appropriate (<br />).
+  -->
+  <div class="inner">
+
+    <header>
+      <h2>{{ trans.get('block.home_banner.title')|raw }}</h2>
+    </header>
+    <p>
+      <img src="/images/agasti-home.jpg">
+    </p>
+    <p>{{ trans.get('block.home_banner.content')|raw }}</p>
+    <footer>
+      <ul class="buttons vertical">
+        <li><a href="/about" class="button fit scrolly">{{ trans.get('block.home_banner.action')|raw }}</a></li>
+      </ul>
+    </footer>
+
+  </div>
+
+</section>
