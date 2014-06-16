@@ -1,6 +1,6 @@
 <?php
 require '../vendor/autoload.php';
-require '../vendor/i18n/i18n.php';
+require '../lib/i18n/i18n.php';
 
 $app = new \Slim\Slim(array(
   'view' => new \Slim\Views\Twig(),

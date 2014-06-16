@@ -68,9 +68,6 @@
 		width: 100%;
 	}
 
-		.button.fit {
-			width: auto;
-		}
 
 /* Lists */
 
@@ -157,3 +154,8 @@
 	#footer {
 		padding: 3em 1.5em;
 	}
+
+
+ol.bjqs-markers.h-centered {
+	display: none;
+}

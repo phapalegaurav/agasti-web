@@ -35,7 +35,7 @@ skel.init({
 					hidden: true,
 					animation: 'pushY',
 					width: '100%',
-					height: 275,
+					height: '70%',
 					html: '<nav data-action="navList" data-args="nav"></nav>',
 					clickToClose: true,
 					swipeToClose: false

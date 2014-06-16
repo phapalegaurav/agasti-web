@@ -18,7 +18,7 @@
     "use strict";
 
     $.fn.bjqs = function(o) {
-        
+
         // slider default settings
         var defaults        = {
 
@@ -96,7 +96,7 @@
             fwd             : 'forward',
             prev            : 'previous'
         };
-            
+
         // run through options and initialise settings
         var init = function() {
 
@@ -145,7 +145,7 @@
                 }
 
             } else {
-                // Stop automatic animation, because we only have one slide! 
+                // Stop automatic animation, because we only have one slide!
                 settings.automatic = false;
             }
 
@@ -316,9 +316,9 @@
         };
 
         var resize_complete = (function () {
-            
+
             var timers = {};
-            
+
             return function (callback, ms, uniqueId) {
                 if (!uniqueId) {
                     uniqueId = "Don't call this twice without a uniqueId";
@@ -460,6 +460,11 @@
                 $c_prev.find('a').css('top', offset);
 
             }
+            else {
+                $c_wrapper.addClass('v-centered');
+                $c_fwd.find('a').css('top', '45%');
+                $c_prev.find('a').css('top', '45%');
+            }
 
         };
 
@@ -473,7 +478,7 @@
 
                 var slidenum    = key + 1,
                     gotoslide   = key + 1;
-                
+
                 if(settings.animtype === 'slide'){
                     // + 2 to account for clones
                     gotoslide = key + 2;
@@ -588,7 +593,7 @@
         var set_next = function(direction) {
 
             if(direction === vars.fwd){
-                
+
                 if($slides.eq(state.currentindex).next().length){
                     state.nextindex = state.currentindex + 1;
                     state.nextslide = state.currentslide + 1;
@@ -656,7 +661,7 @@
                 if(settings.animtype === 'slide'){
 
                     if(settings.showmarkers){
-                        
+
                         var markerindex = state.nextindex-1;
 
                         if(markerindex === state.slidecount-2){

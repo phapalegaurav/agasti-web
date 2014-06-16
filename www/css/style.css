@@ -12,6 +12,7 @@
 /* Basic */
 
 	body, #skel-layers-wrapper {
+		background-color: #c37537;
 		background: #FF9933 url('images/overlay.png');
 	}
 
@@ -119,13 +120,15 @@
 
 	header.special {
 		margin-bottom: 5em;
-		padding-top: 7em;
+		padding-top: 1em;
 		position: relative;
 		text-align: center;
 	}
 
 		header.special h2 {
 			margin-bottom: 0;
+			color: white;
+			font-size: 2em;
 		}
 
 		header.special h2 + p {
@@ -547,18 +550,28 @@
 				}
 
 		.wrapper.style3 {
-			background: rgba(255, 255, 255, 0.95);
+			background: #fdfbf9;
+			background: rgba(255, 255, 255, 0.97);
 			color: inherit;
 		}
 
 		.wrapper.style4 {
-			background: rgba(255, 255, 255, 0.95);
+			background: #fdfbf9;
+			background: rgba(255, 255, 255, 0.97);
 			color: inherit;
 			padding: 4em;
 		}
 
 		#slider {
 			margin: 2em auto;
+		}
+
+		#logo {
+			background: url("/images/agasti-logo-icon.png") no-repeat 0 0;
+			padding-left: 36px;
+			position: absolute;
+			line-height: 32px;
+			top: 10px;
 		}
 
 /* Header */
@@ -598,10 +611,11 @@
 
 		#header nav {
 			letter-spacing: 0.075em;
-			position: absolute;
-			right: 1.5em;
 			text-transform: uppercase;
-			top: 0.75em;
+			float:right;
+		}
+		#header nav ul {
+			margin: 0;
 		}
 
 			#header nav ul li {
@@ -681,6 +695,10 @@
 
 				#header.alt nav ul li.active > a, #header.alt nav ul li:hover > a {
 					border: rgba(255, 153, 51) solid 1px;
+				}
+
+				#header.alt #logo {
+					top: 26px;
 				}
 
 /* Dropotron */
@@ -898,7 +916,7 @@
 
 		#topButton .toggle:before {
 			color: white;
-			content: '\f039';
+			content: '\f0c9';
 			font-size: 0.75em;
 			height: 30px;
 			left: 0;
@@ -911,7 +929,7 @@
 		}
 
 		#topButton .toggle:after {
-			background: rgba(163, 169, 170, 0.75);
+			background: rgba(255, 255, 255, 0.2);
 			border-radius: 0 0 4px 4px;
 			content: '';
 			height: 30px;
@@ -941,7 +959,7 @@
 
 		#sideButton .toggle:before {
 			color: white;
-			content: '\f039';
+			content: '\f0c9';
 			font-size: 1em;
 			height: 40px;
 			left: 10px;
@@ -954,7 +972,7 @@
 		}
 
 		#sideButton .toggle:after {
-			background: rgba(163, 169, 170, 0.75);
+			background: rgba(255, 255, 255, 0.2);
 			border-radius: 2px;
 			content: '';
 			height: 40px;

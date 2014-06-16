@@ -13,3 +13,5 @@ ol.bjqs-markers li{display:inline;}
 ol.bjqs-markers li a{display:inline-block;padding: 0.5em 1em;}
 ol.bjqs-markers li a:hover{background: rgba(255, 153, 51, 0.5);}
 p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
+.narrower ul.bjqs-controls.v-centered li a {background: transparent;font-size: 6em;color: #7c8081;padding: 10px;}
+.narrower ul.bjqs-controls.v-centered li a:hover {background: transparent;}
