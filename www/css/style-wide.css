@@ -6,10 +6,12 @@
 
 /* Basic */
 
-	body, input, select, textarea {
-		font-size: 14pt;
-	}
-
-	header.special {
-		margin-bottom: 4em;
-	}
+body,
+input,
+select,
+textarea {
+	font-size: 14pt;
+}
+header.special {
+	margin-bottom: 4em;
+}

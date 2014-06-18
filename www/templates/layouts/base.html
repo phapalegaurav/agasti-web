@@ -4,13 +4,18 @@
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html class="{{ trans.getLanguage() }}">
+<html lang="{{ lang }}" class="{{ lang }}">
 	<head>
 		<title>{% block page_title %}{% endblock %} {{ trans.get('base.title') }}</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
+		<meta name="description" content="{{ trans.get('base.meta_description') }}" />
+		<meta name="keywords" content="{{ trans.get('base.meta_keywords') }}" />
 		<link rel="shortcut icon" href="/images/agasti-favicon.ico" type="image/x-icon" />
+
+		<link rel="alternate" href="{{ baseUrl() }}{{ urlFor(page, {'lang':'mr'}) }}" hreflang="mr" />
+		<link rel="alternate" href="{{ baseUrl() }}{{ urlFor(page, {'lang':'en'}) }}" hreflang="en" />
+		<link rel="alternate" href="{{ baseUrl() }}{{ urlFor(page, {'lang':'hi'}) }}" hreflang="hi" />
+		<link rel="alternate" href="{{ baseUrl() }}{{ urlFor(page) }}" hreflang="x-default" />
     {% block js_head %}
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		<script src="/js/jquery.min.js"></script>
@@ -59,7 +64,7 @@
 					<!-- <li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li> -->
 				</ul>
 
-				<span class="copyright">&copy; Shri Kshetra Agasti Ashram. All rights reserved. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+				<span class="copyright">&copy; {{ trans.get('block.footer.copyright') }} {{ trans.get('block.footer.rights') }} </span>
 
 			</footer>
 			{% block js_foot %}

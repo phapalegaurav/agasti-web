@@ -14,7 +14,7 @@
       <li><a href="/{{ lang }}/photos">{{ trans.get('block.navbar.gallery') }}</a></li>
       <li><a href="/{{ lang }}/trust">{{ trans.get('block.navbar.trust') }}</a></li>
       <li class="submenu">
-        <a href="#" title="{{ trans.get('block.navbar.language') }}"><span class="only-narrow only-narrower only-mobile">{{ trans.get('block.navbar.language') }}</span><i class="fa fa-language"></i></a>
+        <a href="#/change-language" title="{{ trans.get('block.navbar.language') }}" onclick="return false;"><span class="only-narrow only-narrower only-mobile">{{ trans.get('block.navbar.language') }}</span><i class="fa fa-language"></i></a>
         <ul>
 					<li><a href="{{ urlFor(page, {'lang':'mr'}) }}">{{ trans.get('block.navbar.marathi') }}</a></li>
 					<li><a href="{{ urlFor(page, {'lang':'en'}) }}">{{ trans.get('block.navbar.english') }}</a></li>
