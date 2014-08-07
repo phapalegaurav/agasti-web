@@ -455,6 +455,11 @@ table.default thead {
 .button.wide {
 	padding: 0.75em 2em;
 }
+/* Maps */
+.maps {
+	margin-bottom: 2em;
+}
+
 /* Wrapper */
 
 .wrapper {
@@ -955,7 +960,7 @@ body.index #main {
 }
 #topPanel .link.depth-0,
 #sidePanel .link.depth-0 {
-	font-weight: 900;
+	/*font-weight: 900;*/
 }
 #topPanel .link:first-child,
 #sidePanel .link:first-child {

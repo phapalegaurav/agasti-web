@@ -33,18 +33,18 @@ $setLanguage = function ($lang) use ($app) {
     $view = $app->view();
     $twig = $view->getEnvironment();
     $twig->addGlobal('trans', $i18n);
-    error_log("----------LANG--------".$langCode);
+    //error_log("----------LANG--------".$langCode);
   };
 };
 
-$app->get('(/:lang)/', $setLanguage('lang'), function ($lang = 'mr') use ($app, $i18n) {
+$app->get('(/:lang)/', $setLanguage('lang'), function ($lang = 'mr') use ($app) {
   return $app->render('pages/home.html', array(
     'lang' => $lang,
     'page' => 'home'
   ));
 })->name('home');
 
-$app->get('(/:lang)/about', $setLanguage('lang'), function ($lang = 'mr') use ($app, $i18n) {
+$app->get('(/:lang)/about', $setLanguage('lang'), function ($lang = 'mr') use ($app) {
   return $app->render('pages/about.html', array(
     'lang' => $lang,
     'page' => 'about'
